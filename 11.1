@@ -1,0 +1,21 @@
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+
+r = requests.get('https://urban-university.ru/members/')
+print(r)
+r = requests.post('https://urban-university.ru/members/post', data={'key': 'value'})
+print(r)
+r = requests.put('https://urban-university.ru/members/put', data={'key': 'value'})
+print(r)
+r = requests.delete('https://urban-university.ru/members/delete')
+print(r)
+r = requests.head('https://urban-university.ru/members/get')
+print(r)
+r = requests.options('https://httpbin.org/get')
+print(r)
+text=pd.read_csv('example1.txt', delimiter=',')
+print(text)
+fig, ax = plt.subplots()
+ax.plot([9, 2, 30, 4], [1, 10, 2, 80])
+plt.show()
