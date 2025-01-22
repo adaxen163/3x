@@ -1,0 +1,9 @@
+import inspect
+def introspection_info(obj):
+    print (type(obj))
+    print (hasattr(obj,'atr'))
+    print(inspect.getmodule(obj))
+    print(inspect.getmodule(obj))
+    print('Модуль', inspect.getmodule(obj))
+obj=[1,2,3,4,5]
+print(introspection_info(obj))
